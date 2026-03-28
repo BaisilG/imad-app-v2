@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --border: 210 40% 90%;
+}
+
+.dark {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 96%;
+  --border: 217 19% 25%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.prose img {
+  @apply rounded-lg;
+}
